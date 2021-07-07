@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGT - Mobile design</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body class=" bg-gray-100">
+<div class="container md:w-50 lg:w-1/3 px-3 mx-auto my-3">
+    <div class="card mt-3">
+        <h1 class="title mb-3">Buttons</h1>
+        <div class="grid grid-cols-2 gap-4 mb-3">
+            <button class="btn btn-primary btn-block">Primary</button>
+            <button class="btn btn-block">Default</button>
+        </div>
+        <h1 class="title-secondary mb-3">Buttons with icons</h1>
+        <div class="grid gap-4">
+            <button class="btn btn-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-left" fill="none" viewBox="0 0 24 24"
+                     stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                <span>Left</span>
+            </button>
+            <button class="btn btn-primary btn-icon">
+                <span>Center</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-center" fill="none" viewBox="0 0 24 24"
+                     stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                <span>Center</span>
+            </button>
+            <button class="btn btn-icon">
+                <span>Right</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-right" fill="none" viewBox="0 0 24 24"
+                     stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+            </button>
+
+        </div>
+    </div>
+    <div class="card mt-3">
+        <h1 class="title mb-3">Inputs</h1>
+
+        <p class="font-bold mb-3">Input</p>
+        <div class="input-wrapper">
+            <input type="number" class="input" placeholder="12312">
+        </div>
+
+        <p class="font-bold my-3">Input with label and help</p>
+        <div class="input-wrapper">
+            <label for="text" class="input-label required">Full Name</label>
+            <input type="email" class="input" placeholder="Joe Doe">
+            <p class="input-help">Write your full name</p>
+        </div>
+
+        <p class="font-bold my-3">Input with error</p>
+        <div class="input-wrapper">
+            <label for="text" class="input-label">Email</label>
+            <input type="text" class="input input-error" placeholder="joe_doe@example.com">
+            <p class="input-alert">Add an email</p>
+        </div>
+
+        <p class="font-bold my-3">Input disabled</p>
+        <div class="input-wrapper input-disabled">
+            <label for="text" class="input-label">Email</label>
+            <input type="text" disabled class="input input-with-icon" placeholder="joe_doe@example.com">
+        </div>
+
+        <p class="font-bold my-3">Input with helper</p>
+        <div class="input-wrapper">
+            <label for="text" class="input-label">Email</label>
+            <div class="input-helper-wrapper">
+                <span class="input-helper">
+                    http://
+                </span>
+                <input type="text" class="input input-with-helper" placeholder="joe_doe@example.com">
+            </div>
+        </div>
+
+        <p class="font-bold my-3">Input with icon (same clasess as helper)</p>
+        <div class="input-wrapper">
+            <label for="text" class="input-label required">
+                Email
+            </label>
+            <div class="input-helper-wrapper">
+                <span class="input-helper">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="icon" viewBox="0 0 24 24"
+                         stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"/>
+                    </svg>
+                </span>
+                <input type="text" class="input input-with-helper" placeholder="joe_doe@example.com">
+            </div>
+
+            <p class="font-bold my-3">Select</p>
+            <div class="input-wrapper">
+                <label for="select" class="input-label">Animals</label>
+                <select class="input" name="animals">
+                    <option value="">
+                        Select an options
+                    </option>
+                    <option value="dog">
+                        Dog
+                    </option>
+                    <option value="cat">
+                        Cat
+                    </option>
+                    <option value="hamster">
+                        Hamster
+                    </option>
+                    <option value="parrot">
+                        Parrot
+                    </option>
+                    <option value="spider">
+                        Spider
+                    </option>
+                    <option value="goldfish">
+                        Goldfish
+                    </option>
+                </select>
+            </div>
+
+            <p class="font-bold my-3">Select with helper</p>
+            <div class="input-wrapper">
+                <label for="select" class="input-label">Animals</label>
+                <div class="input-helper-wrapper">
+                    <span class="input-helper">Algo</span>
+                    <select class="input input-with-helper" name="animals">
+                        <option value="">
+                            Select an options
+                        </option>
+                        <option value="dog">
+                            Dog
+                        </option>
+                        <option value="cat">
+                            Cat
+                        </option>
+                        <option value="hamster">
+                            Hamster
+                        </option>
+                        <option value="parrot">
+                            Parrot
+                        </option>
+                        <option value="spider">
+                            Spider
+                        </option>
+                        <option value="goldfish">
+                            Goldfish
+                        </option>
+                    </select>
+                </div>
+            </div>
+
+            <p class="font-bold my-3">Textarea</p>
+            <div class="input-wrapper">
+                <label for="text" class="input-label">Text area</label>
+                <textarea name="text" cols="30" rows="10" class="input" placeholder="Add text"></textarea>
+                <p class="input-help">Describe your emotions 😋</p>
+            </div>
+        </div>
+    </div>
+    <div class="card mt-3">
+        <h1 class="title mb-3">Checkboxes</h1>
+
+        <p class="mb-3">Checkbox group <span class="title-secondary">.checkbox-wrapper</span></p>
+        <div class="checkbox-wrapper">
+            <label class="checkbox-label">
+                <input type="checkbox" name="checked-demo" class="checkbox"/>
+                <span>Checkbox</span>
+            </label>
+            <label class="checkbox-label">
+                <input type="checkbox" name="checked-demo" class="checkbox"/>
+                <span>Checkbox</span>
+            </label>
+        </div>
+        <p class="mb-3 mt-5">Checkbox group <span class="title-secondary">.checkbox-wrapper-row</span></p>
+        <div class="checkbox-wrapper-row">
+            <label class="checkbox-label">
+                <input type="checkbox" name="checked-demo" class="checkbox"/>
+                <span>Checkbox hola esto es largo</span>
+            </label>
+            <label class="checkbox-label">
+                <input type="checkbox" name="checked-demo" class="checkbox"/>
+                <span>Checkbox</span>
+            </label>
+            <label class="checkbox-label">
+                <input type="checkbox" name="checked-demo" class="checkbox"/>
+                <span>Checkbox</span>
+            </label>
+            <label class="checkbox-label">
+                <input type="checkbox" name="checked-demo" class="checkbox"/>
+                <span>Checkbox</span>
+            </label>
+            <label class="checkbox-label">
+                <input type="checkbox" name="checked-demo" class="checkbox"/>
+                <span>Checkbox</span>
+            </label> <label class="checkbox-label">
+            <input type="checkbox" name="checked-demo" class="checkbox"/>
+            <span>Checkbox</span>
+        </label> <label class="checkbox-label">
+            <input type="checkbox" name="checked-demo" class="checkbox"/>
+            <span>Checkbox</span>
+        </label> <label class="checkbox-label">
+            <input type="checkbox" name="checked-demo" class="checkbox"/>
+            <span>Checkbox</span>
+        </label>
+
+        </div>
+
+        <!--Toogle-->
+        <p class="mb-3 mt-5">Toggle <span class="title-secondary">.toggle</span></p>
+        <div class="flex">
+            <div class="toggle-wrapper">
+                <input type="checkbox" name="toggle" id="" class="toggle"/>
+                <label for="" class="toggle-label"></label>
+            </div>
+            <span class="toggle-text">Toogle</span>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.querySelectorAll('.input-label.required').forEach(e => e.innerHTML += '<span class="required-dot"> *</span>')
+</script>
+</body>
+</html>

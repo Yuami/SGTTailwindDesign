@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    /* Buttons */
+    .btn {
+        @apply py-2 px-4 border border-gray-500 focus:ring-gray-300 focus:ring-offset-gray-100 text-black transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg;
+    }
+    .btn-block {
+        @apply w-full;
+    }
+    .btn-primary {
+       @apply bg-primary bg-auto hover:bg-green-600 focus:ring-green-400 focus:ring-offset-green-200 text-white border-0;
+    }
+    .btn-icon {
+        @apply flex justify-center items-center;
+    }
+
+    /* Icons */
+    .icon-xl {
+        @apply w-12 h-12;
+    }
+    .icon {
+        @apply w-6 h-6;
+    }
+    .icon-left {
+        @apply mr-2;
+    }
+    .icon-right {
+        @apply ml-2;
+    }
+    .icon-center {
+        @apply mx-2;
+    }
+
+    /* Cards */
+    .card {
+        @apply shadow-lg rounded-2xl p-4 bg-white;
+    }
+
+    /*  Typography  */
+    .title {
+        @apply text-gray-800 text-xl font-bold;
+    }
+
+     .title-secondary {
+        @apply text-gray-400;
+    }
+
+    /* Inputs */
+    .input {
+        @apply rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent
+    }
+    select.input {
+        appearance: auto;
+    }
+    .input-label {
+        @apply text-gray-700 mb-1
+    }
+    .required-dot {
+        @apply text-red-500
+    }
+    .input-wrapper {
+        @apply relative my-1
+    }
+    .input-disabled {
+        @apply opacity-50 pointer-events-none
+    }
+    .input-error {
+        @apply ring-red-500 ring-2
+    }
+    .input-alert {
+        @apply text-sm text-red-500 mt-1
+    }
+    .input-help {
+        @apply text-sm text-gray-400 mt-1
+    }
+    .input-helper {
+        @apply rounded-l-md inline-flex  items-center px-3 border-t bg-white border-l border-b  border-gray-300 text-gray-500 shadow-sm text-sm
+    }
+    .input-with-helper {
+        @apply rounded-none rounded-r-lg
+    }
+    .input-helper-wrapper {
+        @apply flex
+    }
+
+    /* Checkbox */
+    .checkbox {
+        @apply appearance-none bg-white bg-check h-6 w-6 border border-gray-300 rounded-md checked:bg-primary checked:border-transparent focus:outline-none cursor-pointer
+    }
+    .checkbox-label {
+        @apply flex items-center space-x-2 cursor-pointer
+    }
+    .checkbox-wrapper {
+        @apply flex flex-col justify-start flex-wrap gap-4
+    }
+    .checkbox-wrapper-row {
+        @apply flex justify-start flex-wrap gap-4
+    }
+
+    /* Toggle */
+    .toggle-label {
+        @apply block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer
+    }
+    .toggle-wrapper {
+        @apply relative inline-block w-10 mr-2 align-middle select-none
+    }
+    .toggle-text {
+        @apply text-gray-400 font-medium
+    }
+    .toggle {
+        @apply checked:bg-primary outline-none focus:outline-none right-4 checked:right-0 duration-200 ease-in absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer
+    }
+}
