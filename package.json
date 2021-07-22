@@ -11,7 +11,7 @@
   "devDependencies": {},
   "scripts": {
     "dev": "npx tailwindcss -i ./src/styles/tailwind.css -o ./src//styles/styles.css -w",
-    "prod": "SET NODE_ENV=production & npx tailwindcss -i ./src/styles/tailwind.css -o ./dist/styles/style.css --minify"
+    "prod": "SET NODE_ENV=production & npx tailwindcss -i ./src/styles/tailwind.css -o ./dist/styles/tailwindcss_sgt.css --minify"
   },
   "author": "",
   "license": "ISC"
