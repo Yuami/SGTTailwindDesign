@@ -1,5 +1,14 @@
 module.exports = {
-  purge: ['./src/**/**/**/*.html',],
+  purge:{
+    enabled: true,
+    content: [
+        './src/**/*.html',
+        './src/**/*.js',
+    ],
+    safelist: [
+        'bg-red-500'
+    ]
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
     checkbox: {
